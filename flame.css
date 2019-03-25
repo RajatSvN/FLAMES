@@ -1,0 +1,170 @@
+      body {
+         background: linear-gradient(
+    to right, 
+    rgba(0,0,0,0.8) 0%, 
+    rgba(0,0,0,0.8) 50%, 
+    #262626 50%, 
+    #262626 100%
+  );          
+          margin: 0;
+          padding: 0;
+        }
+
+        #main{
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 75px;
+
+        }
+
+      .form-control{
+        width: 250px;
+        height: 40px;
+      }
+
+      input[type="text"] {
+             display: block;
+             margin : 0 auto;
+
+        }
+
+    h1{
+      color: white;
+      font-family: 'Dancing Script', cursive;
+      font-size: 55px;
+    }
+
+    #partner1{
+      position: relative;
+      margin-top : 30px;
+    }
+
+    .center{
+      position: relative;
+      height: 170px;
+      width: 170px;
+      text-align: center;
+      margin: 0 auto;
+       background: linear-gradient(
+    to right, 
+    rgb(38,38,38) 0%, 
+    rgb(38,38,38) 50%, 
+    rgb(51,51,51) 50%, 
+    rgb(51,51,51) 100%
+  );
+      border: 5px solid white;
+      border-radius: 50%;
+      box-shadow: 15px 15px 15px rgba(0,0,0,.8);
+    }
+
+    .heart{
+      position: relative;
+      width: 70px;
+      height: 70px;
+      background : #f00;
+      text-align: center;
+      margin: 0 auto;
+      transform: rotate(314deg) translate(-40px,40px);
+      animation: animate 1s linear infinite;
+
+    }
+
+    .heart:before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #f00;
+      position: absolute;
+      top:-50%;
+      left:0;
+      border-radius: 50%
+    }
+
+    .heart:after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #f00;
+      position: absolute;
+      bottom:0;
+      right: :50%;
+      border-radius: 50%
+    }
+
+
+
+    @keyframes animate{
+      0%{
+        transform: rotate(314deg) translate(-40px,40px) scale(1);
+      }
+      25%{
+        transform: rotate(314deg) translate(-40px,40px) scale(1);
+      }
+      30%{
+        transform: rotate(314deg) translate(-40px,40px) scale(1.2);
+      }
+      50%{
+        transform: rotate(314deg) translate(-40px,40px) scale(1);
+      }
+      70%{
+        transform: rotate(314deg) translate(-40px,40px) scale(1.2);
+      }
+      90%{
+        transform: rotate(314deg) translate(-40px,40px) scale(1);
+      }
+      100%{
+        transform: rotate(314deg) translate(-40px,40px) scale(1);
+      }
+    }
+
+    #calc{
+      margin-top : 25px ;
+      background: linear-gradient(
+    to right, 
+    rgb(38,38,38) 0%, 
+    rgb(38,38,38) 50%, 
+    rgb(51,51,51) 50%, 
+    rgb(51,51,51) 100%
+  );
+      font-family: 'Dancing Script', cursive;
+      font-size: 25px;
+
+      margin-bottom : 20px;
+    }
+
+    
+
+    #status{
+      margin: 0 auto;
+      margin-top : 15px ;
+      background: linear-gradient(
+    to right, 
+    rgb(38,38,38) 0%, 
+    rgb(38,38,38) 50%, 
+    rgb(51,51,51) 50%, 
+    rgb(51,51,51) 100%
+  );
+      width:360px;
+      font-family: 'Dancing Script', cursive;
+      color:white;
+      font-size: 30px;
+      text-align: center;
+      border: none;
+      margin-bottom : 20px;
+      display: none;
+    
+    }
+
+    #close{
+      color: white;
+      background: linear-gradient(
+    to right, 
+    rgb(51,51,51) 0%, 
+    rgb(51,51,51) 50%, 
+    rgb(51,51,51) 50%, 
+    rgb(51,51,51) 100%
+  );
+      font-family: cursive;
+      border: none;
+      margin-bottom : 20px;
+    }
